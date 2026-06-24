@@ -83,12 +83,11 @@ Precondiciones: El sistema debe estar iniciado con una licencia tipo "DEMO" acti
 Datos: Inspección visual del footer( pies de pagina).
 
 Pasos:
-1.Iniciar la aplicación WilPOS.
+1. Iniciar la aplicación WilPOS.
 2. Observar la barra inferior (footer) en el Dashboard principal.
 3. Navegar a otros módulos (Caja, Inventario) y verificar si el texto permanece.
 
 Resultado esperado: Al estar activa la licencia demo, debe mostrarse un indicador persistente en el footer (pie de página) del sistema con el texto: "Modo Demo Activo"
-
 Resultado actual: El sistema muestra el texto "Demo Gratuito" dentro de un botón gris. No coincide con el texto requerido en la especificación.
 
 Estado: FAIL (Fallido)
