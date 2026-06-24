@@ -56,7 +56,7 @@ Módulos probados:
 
 **Resultado Esperado:** El sistema debe denegar el acceso y mostrar el mensaje de alerta: *"Usuario o contraseña incorrectos."*
 
-
+---
 Caso de Prueba: US-01 - Acceso y Validación:
 ID: TC-01
 Titulo: Acceso y Validación de Licencia Demo
@@ -74,13 +74,14 @@ Pasos:
 Resultado Esperado El sistema debe permitir el acceso al ingresar una llave válida de tipo "DEMO" en el campo de licencia.
 Resultado actua: El sistema  mostro  la licencia como "Activa" y el texto descriptivo exactamente: " Demo gratuito" 
  
-
-Caso de Prueba: US-02 - Verificación de Indicador en Footer
+---
+### Caso de Prueba: US-02 - Verificación de Indicador en Footer
 ID: TC-02
 Titulo: Validación de texto persistente en el pie de página (Footer)
 Modulo: Interfaz de Usuario (UI)
 Precondiciones: El sistema debe estar iniciado con una licencia tipo "DEMO" activa. 
 Datos: Inspección visual del footer( pies de pagina).
+
 Pasos:
 1-Iniciar la aplicación WilPOS.
 2. Observar la barra inferior (footer) en el Dashboard principal.
@@ -90,8 +91,8 @@ Resultado esperado: Al estar activa la licencia demo, debe mostrarse un indicado
 Resultado actual: El sistema muestra el texto "Demo Gratuito" dentro de un botón gris. No coincide con el texto requerido en la especificación.
   
 Estado: FAIL (Fallido)
-
-Caso de Prueba: US-03 - Unificación del Flujo de Entrada
+---
+### Caso de Prueba: US-03 - Unificación del Flujo de Entrada
 ID: TC-03
 Titulo: Verificación de flujo de entrada unificado (Sin botón independiente)
 Modulo: Acceso/ UX (Experiencia de Usuario)
@@ -107,11 +108,10 @@ Resultado actual: Se confirma que el sistema no presenta botones de acceso rápi
  
 Tipo de Prueba: Funcional / Diseño de Flujo
 Estado: PASS(APROBAR)
-
-
+---
 
 US-02: Gestión de Ventas (Retail/Pos)
-Caso de Prueba: US-01 - Búsqueda y Selección de Productos
+### Caso de Prueba: US-01 - Búsqueda y Selección de Productos
 ID: TC-04 
 Titulo: Búsqueda por nombre y selección manual de productos en el POS(Punto de Venta)
 Modulo: CAJA
@@ -128,10 +128,10 @@ Pasos:
 
 Resultado Esperado: El sistema debe mostrar el producto y permitir su selección para el carrito de compras.  
 Resultado Actual: EXITOSO. El sistema mostró correctamente el producto "coca cola"  y se añadió con un precio de RD$88.50  
-
+---
 Estado: Pass(aprobado)
 
-Caso de Prueba: US-02 - Selección de Métodos de Pago
+### Caso de Prueba: US-02 - Selección de Métodos de Pago
 ID: TC-05
 Titulo: Validación de métodos de pago: Efectivo 
 Madulo: Punto de Venta (Caja)
@@ -153,9 +153,9 @@ Pasos:
  
 Resultado esperado: Se deben permitir pagos con métodos: Efectivo (Simulado).
 Resultado actual: EXITOSO. El sistema despliega las opciones de pago. Se validó que el método "efectivo" permite cerrar venta de manera inmediata, cumpliendo con la simulación requerida.
+---
 
-
-Caso de Prueba: US-02 - Selección de Métodos de Pago
+### Caso de Prueba: US-02 - Selección de Métodos de Pago
 ID: TC-06
 Titulo: Validación de métodos de pago: Tarjeta
 Madulo: Punto de Venta (Caja)
@@ -178,9 +178,9 @@ Pasos:
 Resultado esperado: Se deben permitir pagos con método: Tarjeta (Simulado).
 Resultado actual: EXITOSO. El sistema despliega las opciones de pago. Se validó que el método "tarjeta" permite cerrar venta de manera inmediata, cumpliendo con la simulación requerida.
 Tipo de Prueba: Funcional 
+---
 
-
-Caso de Prueba: US-02 - Visualización de Comprobante (PDF)
+### Caso de Prueba: US-02 - Visualización de Comprobante (PDF)
 
 ID: TC-07
 Titulo: visualización de factura en formato digital
@@ -196,8 +196,9 @@ Pasos:
 Resultado esperado: Restricción de Impresión: Al finalizar una venta, no se enviará comando a impresoras físicas, pero debe abrirse un visor de PDF con el recibo generado
 Resultado actual: EXITOSO. Se generó la Factura #5. El sistema calculó correctamente el ITBIS (RD$4.50 sobre un neto de RD$25.00) y muestra todos los campos requeridos en el visor digital
 Tipo de Prueba: Funcional / Salida de Datos.
+---
 
-Caso de Prueba: US-08 - Verificación de Cálculos de ITBIS
+### Caso de Prueba: US-08 - Verificación de Cálculos de ITBIS
 ID: TC-08
 Titulo: Validación de cálculo automático de ITBIS (18%)
 Modulo: Caja “venta”
@@ -211,6 +212,6 @@ Pasos:
 Resultado esperado: El cálculo de ITBIS (18%) debe aplicarse correctamente sobre los productos gravados del dataset de prueba.
 Resultado actual: 
 EXITOSO. Como se observa en la captura, el sistema realiza el cálculo inverso correctamente: RD$25.00 (Neto) x 0.18 = RD$4.50. La suma total coincide perfectamente con el precio del producto.  
-
+---
 
 
