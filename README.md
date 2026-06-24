@@ -65,10 +65,10 @@ Precondiciones: Aplicación Wilpos instalada y en pantalla de inicio(Login/licen
 Datos: Llave “DEMO”
 
 Pasos: 
-1-	Buscar la app llamada “WILPOS”  
-2-	Iniciar la aplicación 
-3-	Dirigirse al módulo de Configuración.
-4-	3. Seleccionar la sección de Estado de Licencia.
+1.	Buscar la app llamada “WILPOS”  
+2.	Iniciar la aplicación 
+3.	Dirigirse al módulo de Configuración.
+4. Seleccionar la sección de Estado de Licencia.
 5-	4. Verificar el estado de la licencia y el texto descriptivo del plan.
 
 Resultado Esperado El sistema debe permitir el acceso al ingresar una llave válida de tipo "DEMO" en el campo de licencia.
