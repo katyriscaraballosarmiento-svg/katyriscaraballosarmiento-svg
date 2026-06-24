@@ -59,12 +59,12 @@ Módulos probados:
 ---
 ## Caso de Prueba: US-01 - Acceso y Validación:
 ### ID: TC-01
-Titulo: Acceso y Validación de Licencia Demo
-Modulo: Configuración / Licenciamiento
-Precondiciones: Aplicación Wilpos instalada y en pantalla de inicio(Login/licencia.
-Datos: Llave “DEMO”
+1. Titulo: Acceso y Validación de Licencia Demo
+2. Modulo: Configuración / Licenciamiento
+3. Precondiciones: Aplicación Wilpos instalada y en pantalla de inicio(Login/licencia.
+4. Datos: Llave “DEMO”
 
-Pasos: 
+5. Pasos: 
 1.	Buscar la app llamada “WILPOS”  
 2.	Iniciar la aplicación 
 3.	Dirigirse al módulo de Configuración.
