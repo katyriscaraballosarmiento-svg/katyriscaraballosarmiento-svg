@@ -73,6 +73,7 @@ Pasos:
 
 Resultado Esperado El sistema debe permitir el acceso al ingresar una llave válida de tipo "DEMO" en el campo de licencia.
 Resultado actua: El sistema  mostro  la licencia como "Activa" y el texto descriptivo exactamente: " Demo gratuito"  
+
 ---
 ## Caso de Prueba: US-02 - Verificación de Indicador en Footer
 ### ID: TC-02
@@ -82,7 +83,7 @@ Precondiciones: El sistema debe estar iniciado con una licencia tipo "DEMO" acti
 Datos: Inspección visual del footer( pies de pagina).
 
 Pasos:
-1-Iniciar la aplicación WilPOS.
+1.Iniciar la aplicación WilPOS.
 2. Observar la barra inferior (footer) en el Dashboard principal.
 3. Navegar a otros módulos (Caja, Inventario) y verificar si el texto permanece.
 
@@ -117,18 +118,19 @@ Estado: PASS(APROBAR)
 Titulo: Búsqueda por nombre y selección manual de productos en el POS(Punto de Venta)
 Modulo: CAJA
 Precondiciones:  
-1-Licencia Demo activa. 
-2- Existencia de productos cargados en el inventario inicial.
+1. Licencia Demo activa. 
+2. Existencia de productos cargados en el inventario inicial.
 Datos:
 Búsqueda: coca-cola
 Pasos: 
-1-	Iniciar sección con credenciales correctas 
-2-	Hacer clic en el módulo de Caja.
-3-	 Ubicar la barra de búsqueda de productos.
-4-	Escribir el nombre de un producto conocido EJ: ”Coca Cola”  
+1.	Iniciar sección con credenciales correctas 
+2.	Hacer clic en el módulo de Caja.
+3.	 Ubicar la barra de búsqueda de productos.
+4.	Escribir el nombre de un producto conocido EJ: ”Coca Cola”  
 
 Resultado Esperado: El sistema debe mostrar el producto y permitir su selección para el carrito de compras.  
-Resultado Actual: EXITOSO. El sistema mostró correctamente el producto "coca cola"  y se añadió con un precio de RD$88.50  
+Resultado Actual: EXITOSO. El sistema mostró correctamente el producto "coca cola"  y se añadió con un precio de RD$88.50 
+
 ---
 Estado: Pass(aprobado)
 
@@ -142,15 +144,15 @@ Precondiciones:
 Datos: Producto: Coca Cola (RD$88.50).
 
 Pasos: 
-1-	Iniciar sección con credenciales correctas 
-2-Hacer clic en el módulo de Caja.
-2-	Ubicar la barra de búsqueda de productos.
-3-Poner nombre de producto ej” coca cola”
-4-Hacer clic en el producto coca cola
-5-Hacer clic en el botón “procesar venta”
-6-Seleccionar “Efectivo”
-7-Hacer click en “Confirmar”
-8-Vizualizacion previa de factura
+1.	Iniciar sección con credenciales correctas 
+2. Hacer clic en el módulo de Caja.
+3.	Ubicar la barra de búsqueda de productos.
+4. Poner nombre de producto ej” coca cola”
+5. Hacer clic en el producto coca cola
+6. Hacer clic en el botón “procesar venta”
+7. Seleccionar “Efectivo”
+8. Hacer click en “Confirmar”
+9. Vizualizacion previa de factura
  
 Resultado esperado: Se deben permitir pagos con métodos: Efectivo (Simulado).
 Resultado actual: EXITOSO. El sistema despliega las opciones de pago. Se validó que el método "efectivo" permite cerrar venta de manera inmediata, cumpliendo con la simulación requerida.
@@ -167,15 +169,15 @@ Precondiciones:
 Datos: Producto: jabon (RD$29.50).
 
 Pasos: 
-1-	Iniciar sección con credenciales correctas  
-2-Hacer clic en el módulo de Caja.
-3-	Ubicar la barra de búsqueda de productos.
-4-Poner nombre de producto ej” jabon ”
-5-Hacer clic en el producto jabón 
-6-Hacer clic en el botón “procesar venta”	
-7-Seleccionar “tarjeta”
-8-Hacer clic en  “Confirmar” 
-9-Vizualizacion previa de factura
+1.	Iniciar sección con credenciales correctas  
+2. Hacer clic en el módulo de Caja.
+3. Ubicar la barra de búsqueda de productos.
+4. Poner nombre de producto ej” jabon ”
+5. Hacer clic en el producto jabón 
+6. Hacer clic en el botón “procesar venta”	
+7. Seleccionar “tarjeta”
+8. Hacer clic en  “Confirmar” 
+9. Vizualizacion previa de factura
  
 Resultado esperado: Se deben permitir pagos con método: Tarjeta (Simulado).
 Resultado actual: EXITOSO. El sistema despliega las opciones de pago. Se validó que el método "tarjeta" permite cerrar venta de manera inmediata, cumpliendo con la simulación requerida.
@@ -191,10 +193,10 @@ Modulo: caja (punto de venta)
 Precondiciones: Venta finalizada con método de pago seleccionado (Efectivo).
 Datos: producto jabon
 Pasos:
-1-Finalizar la venta del producto "jabon". 
-2-Confirmar el pago (Método: efectivo)  
-3-Haz clic en el botón  “ Confirmar “. 
-4-Verificar la apertura automática de la "Vista Previa de Factura".
+1. DFinalizar la venta del producto "jabon". 
+2. Confirmar el pago (Método: efectivo)  
+3. Haz clic en el botón  “ Confirmar “. 
+4. Verificar la apertura automática de la "Vista Previa de Factura".
  
 Resultado esperado: Restricción de Impresión: Al finalizar una venta, no se enviará comando a impresoras físicas, pero debe abrirse un visor de PDF con el recibo generado
 Resultado actual: EXITOSO. Se generó la Factura #5. El sistema calculó correctamente el ITBIS (RD$4.50 sobre un neto de RD$25.00) y muestra todos los campos requeridos en el visor digital
