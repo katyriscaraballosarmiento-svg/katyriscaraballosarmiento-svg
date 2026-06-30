@@ -48,7 +48,7 @@ Módulos probados:
 
 ---
 
-### TC-002 - Validación de Contraseña Incorrecta
+### TC-002 - Validaciar de Contraseña Incorrecta
 **Pasos:**
 1. Abrir la interfaz de Login de WILPOS.
 2. Ingresar un usuario válido.
@@ -58,9 +58,9 @@ Módulos probados:
 **Resultado Esperado:** El sistema debe denegar el acceso y mostrar el mensaje de alerta: *"Usuario o contraseña incorrectos."*
 
 ---
-## Caso de Prueba: US-01 - Acceso y Validación:
+## Caso de Prueba: US-01 - Acceso y Validar:
 ### ID: TC-01
- Titulo: Acceso y Validación de Licencia Demo
+ Titulo: Acceso y Validar de Licencia Demo
  
  Modulo: Configuración / Licenciamiento
  
@@ -80,9 +80,9 @@ Resultado Esperado El sistema debe permitir el acceso al ingresar una llave vál
 Resultado actua: El sistema  mostro  la licencia como "Activa" y el texto descriptivo exactamente: " Demo gratuito"  
 
 ---
-## Caso de Prueba: US-02 - Verificación de Indicador en Footer
+## Caso de Prueba: US-02 - Verificar de Indicador en Footer
 ### ID: TC-02
-Titulo: Validación de texto persistente en el pie de página (Footer)
+Titulo: Validar de texto persistente en el pie de página (Footer)
 
 Modulo: Interfaz de Usuario (UI)
 
@@ -101,9 +101,9 @@ Resultado actual: El sistema muestra el texto "Demo Gratuito" dentro de un botó
 
 Estado: FAIL (Fallido)
 ---
-## Caso de Prueba: US-03 - Unificación del Flujo de Entrada
+## Caso de Prueba: US-03 - Unificar del Flujo de Entrada
 ### ID: TC-03
-Titulo: Verificación de flujo de entrada unificado (Sin botón independiente)
+Titulo: Verificar de flujo de entrada unificado (Sin botón independiente)
 
 Modulo: Acceso/ UX (Experiencia de Usuario)
 
@@ -126,9 +126,9 @@ Estado: PASS(APROBAR)
 ---
 
 ## US-02: Gestión de Ventas (Retail/Pos)
-## Caso de Prueba: US-01 - Búsqueda y Selección de Productos
+## Caso de Prueba: US-01 - Búsqueda y Selecionar de Productos
 ### ID: TC-04 
-Titulo: Búsqueda por nombre y selección manual de productos en el POS(Punto de Venta)
+Titulo: Búsqueda por nombre y selecionar manual de productos en el POS(Punto de Venta)
 
 Modulo: CAJA
 
@@ -153,7 +153,7 @@ Estado: Pass(aprobado)
 
 ## Caso de Prueba: US-02 - Selección de Métodos de Pago
 ### ID: TC-05
-Titulo: Validación de métodos de pago: Efectivo 
+Titulo: Validar de métodos de pago: Efectivo 
 
 Madulo: Punto de Venta (Caja)
 
@@ -181,9 +181,9 @@ Resultado actual: EXITOSO. El sistema despliega las opciones de pago. Se validó
 
 ---
 
-## Caso de Prueba: US-02 - Selección de Métodos de Pago
+## Caso de Prueba: US-02 - Selecionar de Métodos de Pago
 ### ID: TC-06
-Titulo: Validación de métodos de pago: Tarjeta
+Titulo: Validar de métodos de pago: Tarjeta
 
 Madulo: Punto de Venta (Caja)
 
@@ -238,7 +238,7 @@ Tipo de Prueba: Funcional / Salida de Datos.
 
 ## Caso de Prueba: US-08 - Verificar de Cálculos de ITBIS
 ### ID: TC-08
-Titulo: Validación de cálculo automático de ITBIS (18%)
+Titulo: Validar de cálculo automático de ITBIS (18%)
 
 Modulo: Caja “venta”
 
