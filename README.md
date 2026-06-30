@@ -151,7 +151,7 @@ Resultado Actual: EXITOSO. El sistema mostró correctamente el producto "coca co
 ---
 Estado: Pass(aprobado)
 
-## Caso de Prueba: US-02 - Selección de Métodos de Pago
+## Caso de Prueba: US-02 - Selecionar Métodos de Pago
 ### ID: TC-05
 Titulo: Validar de métodos de pago: Efectivo 
 
