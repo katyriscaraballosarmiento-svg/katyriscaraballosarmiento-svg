@@ -212,10 +212,10 @@ Tipo de Prueba: Funcional
 
 ---
 
-## Caso de Prueba: US-02 - Visualización de Comprobante (PDF)
+## Caso de Prueba: US-02 - Visualizar de Comprobante (PDF)
 
 ### ID: TC-07
-Titulo: visualización de factura en formato digital
+Titulo: visualizar de factura en formato digital
 
 Modulo: caja (punto de venta)
 
@@ -224,7 +224,7 @@ Precondiciones: Venta finalizada con método de pago seleccionado (Efectivo).
 Datos: producto jabon
 
 Pasos:
-1. DFinalizar la venta del producto "jabon". 
+1. Finalizar la venta del producto "jabon". 
 2. Confirmar el pago (Método: efectivo)  
 3. Haz clic en el botón  “ Confirmar “. 
 4. Verificar la apertura automática de la "Vista Previa de Factura".
@@ -260,13 +260,6 @@ EXITOSO. Como se observa en la captura, el sistema realiza el cálculo inverso c
 
 
 # Práctica de Exploración: Plataforma OrangeHRM
-
-# Práctica de Exploración: Plataforma OrangeHRM[cite: 1]
-
-**Por:** Katyris Caraballo Sarmiento  
-**Curso:** Curso de QA Manual 
-**Maestro:** Feliz Manuel Lora Martínez  
-**Fecha:** 11 de febrero de 2026  
 
 ---
 
