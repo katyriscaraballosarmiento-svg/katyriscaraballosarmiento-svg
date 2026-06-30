@@ -272,6 +272,7 @@ EXITOSO. Como se observa en la captura, el sistema realiza el cálculo inverso c
 ### 2. Dashboard (Panel Principal)
 * **Acción:** Tras iniciar sesión, la página me redirigió automáticamente al Dashboard
 * **Observación:** En el Dashboard observé varios widgets que resumen la actividad diaria de la empresa, lo que facilita la toma de decisiones rápidas sin navegar por todos los módulos[cite: 1]. El sistema cuenta con una sección de *Quick Launch* que actúa como un atajo para las tareas más comunes, optimizando el flujo de trabajo del usuario.
+  
 ---
 ### 3. Módulo de PIM (Personal Information Management)
 * **Acción:** Hice clic en la opción **"PIM"** del menú lateral izquierdo y seleccioné **"Employee List"**
