@@ -295,3 +295,287 @@ Desde mi perspectiva, el módulo de **PIM** resultó ser el más interesante y r
 
 En definitiva, esta práctica me permitió comprender cómo la digitalización de los procesos de Recursos Humanos no solo ahorra tiempo mediante funciones como el *Quick Launch*, sino que también aporta transparencia y eficiencia a la administración de una empresa moderna.
 
+
+# Práctica 2: Diseño de Casos de Prueba - OrangeHRM
+
+---
+
+## 📋 Especificación de Casos de Prueba (15 Escenarios)
+
+### Módulo 1: Login (Inicio de Sesión)
+
+#### 🔍 Caso de Prueba #1
+* **ID:** `TC-LOGIN-001`
+* **Título:** Inicio de sesión con credenciales correctas
+* **Módulo:** Login
+* **Precondición:** Usuario registrado previamente en el sistema.
+* **Datos de prueba:** * Usuario: `Admin`
+  * Contraseña: `admin123`
+* **Pasos:**
+  1. Ingresar a la URL del sistema.
+  2. Digitar el usuario válido en el campo correspondiente.
+  3. Digitar la contraseña válida en el campo correspondiente.
+  4. Presionar el botón "Login".
+* **Resultado Esperado:** El sistema permite el acceso correctamente y redirige a la pantalla del Dashboard.
+* **Tipo:** Positiva (Funcional)
+* **Prioridad:** Alta
+
+#### 🔍 Caso de Prueba #2
+* **ID:** `TC-LOGIN-002`
+* **Título:** Inicio de sesión con credenciales incorrectas
+* **Módulo:** Login
+* **Precondición:** El usuario ingresado no está registrado en el sistema.
+* **Datos de prueba:** * Usuario: `katyris`
+  * Contraseña: `1234`
+* **Pasos:**
+  1. Ingresar a la URL del sistema.
+  2. Digitar el usuario no válido `katyris`.
+  3. Digitar la contraseña no válida `1234` (o `1253`).
+  4. Presionar el botón "Login".
+* **Resultado Esperado:** El sistema bloquea el acceso y despliega una alerta de error en pantalla que indica: *"Invalid credentials"*.
+* **Tipo:** Negativa (Validación)
+* **Prioridad:** Alta
+
+---
+
+### Módulo 2: PIM (Personal Information Management)
+
+#### 🔍 Caso de Prueba #3
+* **ID:** `TC-PIM-003`
+* **Título:** Registro exitoso de un nuevo empleado
+* **Módulo:** PIM
+* **Precondición:** Sesión activa con rol de Administrador.
+* **Datos de prueba:** * Nombre: `Angel Miguel`
+  * Apellido: `Sarmiento`
+  * Employee ID: `1213`
+* **Pasos:**
+  1. Ir al menú lateral y hacer clic en el módulo "PIM".
+  2. Hacer clic en la pestaña superior "Add Employee".
+  3. Llenar los campos obligatorios con el Nombre y el Apellido de prueba.
+  4. Ingresar la identificación manual en el campo "Employee ID" (`1213`).
+  5. Hacer clic en el botón "Save".
+* **Resultado Esperado:** Se muestra un mensaje emergente verde indicando *"Successfully Saved"* y se crea el perfil cargando los detalles personales del nuevo empleado.
+* **Tipo:** Positiva (Funcional)
+* **Prioridad:** Alta
+
+#### 🔍 Caso de Prueba #4
+* **ID:** `TC-PIM-004`
+* **Título:** Validación de campos obligatorios vacíos al agregar empleado
+* **Módulo:** PIM
+* **Precondición:** Sesión activa con rol de Administrador; ubicarse en la vista "Add Employee".
+* **Datos de prueba:** Borrar o dejar en blanco el campo "First Name".
+* **Pasos:**
+  1. Intentar guardar el formulario del nuevo empleado manteniendo el campo del nombre completamente en blanco.
+  2. Hacer clic en el botón "Save".
+* **Resultado Esperado:** El sistema debe impedir el guardado definitivo y desplegar un mensaje de error en color rojo debajo del campo vacío con la etiqueta *"Required"*.
+* **Tipo:** Validación / Negativa
+* **Prioridad:** Alta
+
+---
+
+### Módulo 3: Leave (Gestión de Licencias / Permisos)
+
+#### 🔍 Caso de Prueba #5
+* **ID:** `TC-LEAVE-005`
+* **Título:** Validación de regla de negocio por saldo insuficiente al asignar licencia
+* **Módulo:** Leave
+* **Precondición:** Sesión activa con rol de Administrador. El empleado seleccionado no debe tener días acumulados disponibles.
+* **Datos de prueba:** * Empleado: `Peter Mac Anderson`
+  * Tipo de licencia: `Maternidad` (u otra licencia vacacional)
+  * Rango de fechas: `01/03/2026 - 10/03/2026`
+  * Duración: `Todos los días / Medio día - tarde`
+* **Pasos:**
+  1. Ir al módulo "Leave" en el menú principal.
+  2. Hacer clic en la pestaña "Assign Leave".
+  3. Completar todos los parámetros solicitados con los datos de prueba.
+  4. Hacer clic en el botón "Assign".
+* **Resultado Esperado:** El sistema interrumpe el flujo automático y lanza una alerta flotante de confirmación advirtiendo: *"El empleado no tiene suficiente saldo de vacaciones para la solicitud..."*.
+* **Tipo:** Escenario Alterno / Regla de Negocio
+* **Prioridad:** Alta
+
+---
+
+### Módulo 4: Admin (Administración del Sistema)
+
+#### 🔍 Caso de Prueba #6
+* **ID:** `TC-ADM-006`
+* **Título:** Agregar una nueva nacionalidad al catálogo
+* **Módulo:** Admin
+* **Precondición:** El nombre de la nacionalidad a registrar no debe existir en la lista actual.
+* **Datos de prueba:** Nacionalidad: `dominicano`
+* **Pasos:**
+  1. Navegar al módulo "Admin" en el menú izquierdo.
+  2. Desplegar o seleccionar la sección "Nationalities".
+  3. Hacer clic en el botón verde "+ Add".
+  4. Ingresar el texto `dominicano` en el campo "Name".
+  5. Hacer clic en el botón "Save".
+* **Resultado Esperado:** La nacionalidad se almacena correctamente, reindexando la tabla general con el mensaje emergente *"Successfully Saved"*.
+* **Tipo:** Positiva (Funcional)
+* **Prioridad:** Alta
+
+#### 🔍 Caso de Prueba #7
+* **ID:** `TC-ADM-007`
+* **Título:** Editar satisfactoriamente una nacionalidad existente
+* **Módulo:** Admin
+* **Precondición:** Debe existir previamente el registro de la nacionalidad elegida en el catálogo.
+* **Datos de prueba:** * Registro origen: `AMERICANO`
+  * Nuevo valor: `mexicano`
+* **Pasos:**
+  1. Ir al módulo "Admin" y ubicarse en la tabla de "Nationalities".
+  2. Buscar el registro `AMERICANO` y hacer clic en su respectivo icono de lápiz ("Edit").
+  3. Modificar el campo del nombre reemplazándolo por el valor `mexicano`.
+  4. Hacer clic en el botón "Save".
+* **Resultado Esperado:** Se actualiza el nombre en la lista general y el sistema lanza la confirmación emergente *"Successfully Saved"*.
+* **Tipo:** Positiva (Funcional)
+* **Prioridad:** Alta
+
+#### 🔍 Caso de Prueba #8
+* **ID:** `TC-ADM-008`
+* **Título:** Eliminación masiva de registros en la tabla
+* **Módulo:** Admin
+* **Precondición:** Deben existir al menos dos o más registros creados en el listado de nacionalidades.
+* **Datos de prueba:** Selección múltiple de casillas de verificación (Checkboxes).
+* **Pasos:**
+  1. Ir al listado de nacionalidades dentro del módulo Admin.
+  2. Marcar las casillas de verificación de múltiples registros simultáneamente.
+  3. Hacer clic en el botón superior "Delete Selected".
+  4. Confirmar la acción en el cuadro de diálogo de advertencia.
+* **Resultado Esperado:** Todas las nacionalidades seleccionadas son eliminadas de la base de datos de manera conjunta, mostrando un mensaje confirmando el éxito de la operación.
+* **Tipo:** Positiva (Funcional)
+* **Prioridad:** Alta
+
+---
+
+### Módulo 5: Time (Control de Asistencia y Tiempo)
+
+#### 🔍 Caso de Prueba #9
+* **ID:** `TC-TIME-009`
+* **Título:** Visualización y consulta exitosa de registros de asistencia
+* **Módulo:** Time
+* **Precondición:** El empleado consultado debe encontrarse en estado activo dentro del sistema con marcaciones previas.
+* **Datos de prueba:** * Employee Name: `Peter Mac Anderson`
+  * Date: `2026-03-03`
+* **Pasos:**
+  1. Ingresar al módulo de "Time" desde el menú lateral principal.
+  2. Seleccionar la opción de submenú "Attendance > My Records / Attendance Records".
+  3. En el buscador "Employee Name", escribir las iniciales y seleccionar al empleado sugerido por el autocompletado.
+  4. Hacer clic en el icono del calendario e ingresar la fecha específica `2026-03-03`.
+  5. Hacer clic en el botón "View".
+* **Resultado Esperado:** El sistema procesa la consulta de manera fluida y carga detalladamente la tabla horaria del día para ese empleado.
+* **Tipo:** Positiva (Consulta)
+* **Prioridad:** Alta
+
+#### 🔍 Caso de Prueba #10
+* **ID:** `TC-TIME-010`
+* **Título:** Validación del sistema cuando no existen registros para una fecha específica
+* **Módulo:** Time
+* **Precondición:** Escoger un día sin actividad laboral o una fecha en el futuro.
+* **Datos de prueba:** * Employee Name: `Peter Mac Anderson`
+  * Date: `2029-01-01`
+* **Pasos:**
+  1. Ingresar a la sección "Attendance Records" dentro de Time.
+  2. Seleccionar al empleado de prueba.
+  3. Introducir una fecha donde no haya registros de marcación (`2029-01-01`).
+  4. Hacer clic en el botón "View".
+* **Resultado Esperado:** El sistema debe manejar la consulta limpiamente mostrando un aviso informativo central que declare: *"No Records Found"*, sin romper el diseño de la tabla.
+* **Tipo:** Negativa / Validación
+* **Prioridad:** Media
+
+---
+
+### Módulo 6: Performance (Gestión del Desempeño)
+
+#### 🔍 Caso de Prueba #11
+* **ID:** `TC-PERF-011`
+* **Título:** Búsqueda y filtrado avanzado de revisiones de desempeño
+* **Módulo:** Performance
+* **Precondición:** Existencia previa de evaluaciones cargadas con los estados e información correspondiente.
+* **Datos de prueba:** * Employee Name: `Peter Mac Anderson`
+  * Review Status: `In Progress`
+  * Job Title: `Account Clerk` (o Account Assistant)
+  * Incluir: Empleados actuales y pasados
+* **Pasos:**
+  1. Ingresar al módulo "Performance" en el menú principal.
+  2. Seleccionar la opción "Manage Reviews".
+  3. Ingresar y seleccionar el nombre del empleado.
+  4. Cambiar el menú desplegable de estado a `"In Progress"`.
+  5. Ajustar el cargo en el selector a `"Account Clerk"`.
+  6. Hacer clic en el botón "Search".
+* **Resultado Esperado:** La interfaz filtra dinámicamente el contenedor y muestra con total exactitud las evaluaciones que coincidan con los tres filtros ingresados.
+* **Tipo:** Positiva (Filtro)
+* **Prioridad:** Alta
+
+#### 🔍 Caso de Prueba #12
+* **ID:** `TC-PERF-012`
+* **Título:** Validación de búsqueda con filtros que no coinciden (Sin resultados)
+* **Módulo:** Performance
+* **Precondición:** Ingresar variables cruzadas de empleados sin procesos evaluativos asignados.
+* **Datos de prueba:** * Employee Name: `Angel`
+  * Review Status: `Activated`
+* **Pasos:**
+  1. Dirigirse a la pantalla de "Manage Reviews" dentro de Performance.
+  2. Introducir un empleado de prueba que no tenga evaluaciones (`Angel`).
+  3. Configurar el estado del filtro en `"Activated"`.
+  4. Hacer clic en el botón "Search".
+* **Resultado Esperado:** La grilla de datos oculta las filas genéricas y despliega limpiamente el mensaje institucional *"No Records Found"*.
+* **Tipo:** Validación / Negativa
+* **Prioridad:** Media
+
+---
+
+### Módulo 7: Dashboard (Tablero Principal)
+
+#### 🔍 Caso de Prueba #13
+* **ID:** `TC-DASH-013`
+* **Título:** Verificación de carga e interactividad de widgets en el panel principal
+* **Módulo:** Dashboard
+* **Precondición:** El usuario se encuentra debidamente autenticado con un rol activo del sistema.
+* **Datos de prueba:** N/A (Inspección Visual de la interfaz de usuario)
+* **Pasos:**
+  1. Completar el Login o hacer clic directo sobre la opción "Dashboard" del menú lateral.
+  2. Inspeccionar la renderización de bloques: *Time at Work*, *My Actions*, *Quick Launch*, *Buzz Latest Posts*, *Employee Distribution by Subunit* y *Employee Distribution by Location*.
+  3. Pasar el puntero del mouse sobre las gráficas circulares.
+  4. Hacer clic sobre un icono de acceso directo en *Quick Launch* (Ej: Assign Leave).
+* **Resultado Esperado:**
+  1. Todos los widgets cargan sin errores del tipo "404" o "Data not found".
+  2. El widget "Time at Work" muestra el estado actual del reloj del usuario.
+  3. Los gráficos circulares son interactivos (muestran etiquetas de datos al pasar el mouse).
+  4. Los botones de atajo redirigen correctamente a sus pantallas operativas correspondientes.
+* **Tipo:** UI / Interfaz de Usuario e Integración
+* **Prioridad:** Media
+
+---
+
+### Módulo 8: Claim (Gestión de Reclamos)
+
+#### 🔍 Caso de Prueba #14
+* **ID:** `TC-CLAIM-014`
+* **Título:** Creación y asignación exitosa de un evento de reclamo
+* **Módulo:** Claim
+* **Precondición:** El usuario que ejecuta posee privilegios de Admin o Claim Manager.
+* **Datos de prueba:** * Employee Name: `Alice Duval`
+  * Event: `Accommodation` (Alojamiento)
+  * Currency: `United States Dollar`
+  * Remarks: `Reembolso por estadía en conferencia de tecnología.`
+* **Pasos:**
+  1. Navegar al menú lateral "Claim" y seleccionar la acción "Assign Claim".
+  2. Buscar y seleccionar la empleada `Alice Duval`.
+  3. Seleccionar la categoría de evento `Accommodation` en el menú desplegable.
+  4. Configurar la moneda en `United States Dollar`.
+  5. Redactar las observaciones en el bloque de notas de texto "Remarks".
+  6. Hacer clic en el botón "Create".
+* **Resultado Esperado:** El flujo concluye exitosamente guardando la cabecera del reclamo y mostrando la alerta superior flotante *"Successfully Saved"*.
+* **Tipo:** Positiva (Funcional)
+* **Prioridad:** Alta
+
+#### 🔍 Caso de Prueba #15
+* **ID:** `TC-CLAIM-015`
+* **Título:** Validación de campos requeridos obligatorios al asignar un reclamo
+* **Módulo:** Claim
+* **Precondición:** Acceder a la sección "Assign Claim" y omitir la entrada de datos.
+* **Datos de prueba:** Formulario vacío.
+* **Pasos:**
+  1. Entrar a la interfaz de asignación de reclamos.
+  2. Mantener todos los campos de selección y búsqueda completamente en blanco.
+  3. Hacer clic directamente en el botón "Create".
+* **Resultado Esperado:** El sistema detiene el envío, bloquea el guardado y resalta en rojo los campos obligatorios (*Employee Name*, *Event* y *Currency*) acompañados de
