@@ -48,7 +48,7 @@ Módulos probados:
 
 ---
 
-### TC-002 - Validaciar de Contraseña Incorrecta
+### TC-002 - Validar de Contraseña Incorrecta
 **Pasos:**
 1. Abrir la interfaz de Login de WILPOS.
 2. Ingresar un usuario válido.
