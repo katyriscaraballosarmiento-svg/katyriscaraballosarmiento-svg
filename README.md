@@ -236,7 +236,7 @@ Tipo de Prueba: Funcional / Salida de Datos.
 
 ---
 
-## Caso de Prueba: US-08 - Verificación de Cálculos de ITBIS
+## Caso de Prueba: US-08 - Verificar de Cálculos de ITBIS
 ### ID: TC-08
 Titulo: Validación de cálculo automático de ITBIS (18%)
 
@@ -258,4 +258,47 @@ EXITOSO. Como se observa en la captura, el sistema realiza el cálculo inverso c
 
 ---
 
+
+# Práctica de Exploración: Plataforma OrangeHRM
+
+# Práctica de Exploración: Plataforma OrangeHRM[cite: 1]
+
+**Por:** Katyris Caraballo Sarmiento  
+**Curso:** Curso de QA Manual 
+**Maestro:** Feliz Manuel Lora Martínez  
+**Fecha:** 11 de febrero de 2026  
+
+---
+
+## 📋 Desarrollo de la Tarea
+
+### 1. Acceso al Sistema (Login)
+* **Acción:** Ingresé a la URL oficial de *OrangeHRM Demo*. Introduje las credenciales proporcionadas: Usuario `Admin` y Contraseña `admin123`.
+* **Observación:** La interfaz es limpia y profesional. Presenta un formulario centralizado con validación de seguridad.
+
+### 2. Dashboard (Panel Principal)
+* **Acción:** Tras iniciar sesión, la página me redirigió automáticamente al Dashboard
+* **Observación:** En el Dashboard observé varios widgets que resumen la actividad diaria de la empresa, lo que facilita la toma de decisiones rápidas sin navegar por todos los módulos[cite: 1]. El sistema cuenta con una sección de *Quick Launch* que actúa como un atajo para las tareas más comunes, optimizando el flujo de trabajo del usuario.
+
+### 3. Módulo de PIM (Personal Information Management)
+* **Acción:** Hice clic en la opción **"PIM"** del menú lateral izquierdo y seleccioné **"Employee List"**
+* **Observación:** Este módulo PIM es el eje central de OrangeHRM, ya que centraliza toda la base de datos del personal. Permite buscar personal por nombre, ID o estado de contrato. Descubrí que se puede añadir, editar o eliminar información detallada de cada trabajador.
+
+### 4. Módulo de Leave (Gestión de Permisos)
+* **Acción:** Seleccioné el módulo **"Leave"** en el menú lateral.
+* **Observación:** Aquí se gestionan las vacaciones y ausencias. Exploré la sección **"Apply"**, donde un empleado puede solicitar días libres seleccionando el tipo de permiso y el rango de fechas. El sistema muestra automáticamente el balance de días disponibles.
+
+### 5. Módulo de Recruitment (Reclutamiento)
+* **Acción:** Ingresé al módulo de **"Recruitment"** y revisé la pestaña **"Candidates"**.
+* **Observación:** Este apartado sirve para gestionar el flujo de contratación. Permite ver las vacantes abiertas y los candidatos que han aplicado, facilitando el seguimiento de entrevistas y procesos de selección.
+
+---
+
+## 🎯 Conclusión
+
+Tras la exploración detallada de la plataforma *OrangeHRM Demo*, puedo concluir que se trata de una herramienta integral y sumamente intuitiva para la gestión del capital humano. La interfaz facilita la navegación gracias a su estructura modular y al uso de elementos visuales como los widgets en el panel principal.
+
+Desde mi perspectiva, el módulo de **PIM** resultó ser el más interesante y relevante, ya que funciona como la columna vertebral de todo el sistema. Al centralizar la información maestra de cada colaborador, garantiza que procesos como la gestión de permisos en el módulo de *Leave* o el seguimiento de vacantes en *Recruitment* operen de manera precisa y organizada.
+
+En definitiva, esta práctica me permitió comprender cómo la digitalización de los procesos de Recursos Humanos no solo ahorra tiempo mediante funciones como el *Quick Launch*, sino que también aporta transparencia y eficiencia a la administración de una empresa moderna.
 
