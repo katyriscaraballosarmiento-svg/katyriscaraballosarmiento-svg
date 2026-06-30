@@ -268,19 +268,19 @@ EXITOSO. Como se observa en la captura, el sistema realiza el cálculo inverso c
 ### 1. Acceso al Sistema (Login)
 * **Acción:** Ingresé a la URL oficial de *OrangeHRM Demo*. Introduje las credenciales proporcionadas: Usuario `Admin` y Contraseña `admin123`.
 * **Observación:** La interfaz es limpia y profesional. Presenta un formulario centralizado con validación de seguridad.
-
+---
 ### 2. Dashboard (Panel Principal)
 * **Acción:** Tras iniciar sesión, la página me redirigió automáticamente al Dashboard
 * **Observación:** En el Dashboard observé varios widgets que resumen la actividad diaria de la empresa, lo que facilita la toma de decisiones rápidas sin navegar por todos los módulos[cite: 1]. El sistema cuenta con una sección de *Quick Launch* que actúa como un atajo para las tareas más comunes, optimizando el flujo de trabajo del usuario.
-
+---
 ### 3. Módulo de PIM (Personal Information Management)
 * **Acción:** Hice clic en la opción **"PIM"** del menú lateral izquierdo y seleccioné **"Employee List"**
 * **Observación:** Este módulo PIM es el eje central de OrangeHRM, ya que centraliza toda la base de datos del personal. Permite buscar personal por nombre, ID o estado de contrato. Descubrí que se puede añadir, editar o eliminar información detallada de cada trabajador.
-
+---
 ### 4. Módulo de Leave (Gestión de Permisos)
 * **Acción:** Seleccioné el módulo **"Leave"** en el menú lateral.
 * **Observación:** Aquí se gestionan las vacaciones y ausencias. Exploré la sección **"Apply"**, donde un empleado puede solicitar días libres seleccionando el tipo de permiso y el rango de fechas. El sistema muestra automáticamente el balance de días disponibles.
-
+---
 ### 5. Módulo de Recruitment (Reclutamiento)
 * **Acción:** Ingresé al módulo de **"Recruitment"** y revisé la pestaña **"Candidates"**.
 * **Observación:** Este apartado sirve para gestionar el flujo de contratación. Permite ver las vacantes abiertas y los candidatos que han aplicado, facilitando el seguimiento de entrevistas y procesos de selección.
@@ -294,7 +294,7 @@ Tras la exploración detallada de la plataforma *OrangeHRM Demo*, puedo concluir
 Desde mi perspectiva, el módulo de **PIM** resultó ser el más interesante y relevante, ya que funciona como la columna vertebral de todo el sistema. Al centralizar la información maestra de cada colaborador, garantiza que procesos como la gestión de permisos en el módulo de *Leave* o el seguimiento de vacantes en *Recruitment* operen de manera precisa y organizada.
 
 En definitiva, esta práctica me permitió comprender cómo la digitalización de los procesos de Recursos Humanos no solo ahorra tiempo mediante funciones como el *Quick Launch*, sino que también aporta transparencia y eficiencia a la administración de una empresa moderna.
-
+---
 
 # Práctica 2: Diseño de Casos de Prueba - OrangeHRM
 
@@ -319,7 +319,7 @@ En definitiva, esta práctica me permitió comprender cómo la digitalización d
 * **Resultado Esperado:** El sistema permite el acceso correctamente y redirige a la pantalla del Dashboard.
 * **Tipo:** Positiva (Funcional)
 * **Prioridad:** Alta
-
+---
 #### 🔍 Caso de Prueba #2
 * **ID:** `TC-LOGIN-002`
 * **Título:** Iniciar de sesión con credenciales incorrectas
@@ -357,7 +357,7 @@ En definitiva, esta práctica me permitió comprender cómo la digitalización d
 * **Resultado Esperado:** Se muestra un mensaje emergente verde indicando *"Successfully Saved"* y se crea el perfil cargando los detalles personales del nuevo empleado.
 * **Tipo:** Positiva (Funcional)
 * **Prioridad:** Alta
-
+---
 #### 🔍 Caso de Prueba #4
 * **ID:** `TC-PIM-004`
 * **Título:** Validar de campos obligatorios vacíos al agregar empleado
@@ -412,7 +412,7 @@ En definitiva, esta práctica me permitió comprender cómo la digitalización d
 * **Resultado Esperado:** La nacionalidad se almacena correctamente, reindexando la tabla general con el mensaje emergente *"Successfully Saved"*.
 * **Tipo:** Positiva (Funcional)
 * **Prioridad:** Alta
-
+---
 #### 🔍 Caso de Prueba #7
 * **ID:** `TC-ADM-007`
 * **Título:** Editar satisfactoriamente una nacionalidad existente
@@ -428,7 +428,7 @@ En definitiva, esta práctica me permitió comprender cómo la digitalización d
 * **Resultado Esperado:** Se actualiza el nombre en la lista general y el sistema lanza la confirmación emergente *"Successfully Saved"*.
 * **Tipo:** Positiva (Funcional)
 * **Prioridad:** Alta
-
+---
 #### 🔍 Caso de Prueba #8
 * **ID:** `TC-ADM-008`
 * **Título:** Eliminar masiva de registros en la tabla
@@ -464,7 +464,7 @@ En definitiva, esta práctica me permitió comprender cómo la digitalización d
 * **Resultado Esperado:** El sistema procesa la consulta de manera fluida y carga detalladamente la tabla horaria del día para ese empleado.
 * **Tipo:** Positiva (Consulta)
 * **Prioridad:** Alta
-
+---
 #### 🔍 Caso de Prueba #10
 * **ID:** `TC-TIME-010`
 * **Título:** Validar del sistema cuando no existen registros para una fecha específica
@@ -504,7 +504,7 @@ En definitiva, esta práctica me permitió comprender cómo la digitalización d
 * **Resultado Esperado:** La interfaz filtra dinámicamente el contenedor y muestra con total exactitud las evaluaciones que coincidan con los tres filtros ingresados.
 * **Tipo:** Positiva (Filtro)
 * **Prioridad:** Alta
-
+---
 #### 🔍 Caso de Prueba #12
 * **ID:** `TC-PERF-012`
 * **Título:** Validar búsqueda con filtros que no coinciden (Sin resultados)
@@ -567,7 +567,7 @@ En definitiva, esta práctica me permitió comprender cómo la digitalización d
 * **Resultado Esperado:** El flujo concluye exitosamente guardando la cabecera del reclamo y mostrando la alerta superior flotante *"Successfully Saved"*.
 * **Tipo:** Positiva (Funcional)
 * **Prioridad:** Alta
-
+---
 #### 🔍 Caso de Prueba #15
 * **ID:** `TC-CLAIM-015`
 * **Título:** Validar de campos requeridos obligatorios al asignar un reclamo
