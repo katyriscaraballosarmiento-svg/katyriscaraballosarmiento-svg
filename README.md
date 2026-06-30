@@ -306,7 +306,7 @@ En definitiva, esta práctica me permitió comprender cómo la digitalización d
 
 #### 🔍 Caso de Prueba #1
 * **ID:** `TC-LOGIN-001`
-* **Título:** Inicio de sesión con credenciales correctas
+* **Título:** Iniciar de sesión con credenciales correctas
 * **Módulo:** Login
 * **Precondición:** Usuario registrado previamente en el sistema.
 * **Datos de prueba:** * Usuario: `Admin`
@@ -322,7 +322,7 @@ En definitiva, esta práctica me permitió comprender cómo la digitalización d
 
 #### 🔍 Caso de Prueba #2
 * **ID:** `TC-LOGIN-002`
-* **Título:** Inicio de sesión con credenciales incorrectas
+* **Título:** Iniciar de sesión con credenciales incorrectas
 * **Módulo:** Login
 * **Precondición:** El usuario ingresado no está registrado en el sistema.
 * **Datos de prueba:** * Usuario: `katyris`
@@ -342,7 +342,7 @@ En definitiva, esta práctica me permitió comprender cómo la digitalización d
 
 #### 🔍 Caso de Prueba #3
 * **ID:** `TC-PIM-003`
-* **Título:** Registro exitoso de un nuevo empleado
+* **Título:** Registrar exitoso de un nuevo empleado
 * **Módulo:** PIM
 * **Precondición:** Sesión activa con rol de Administrador.
 * **Datos de prueba:** * Nombre: `Angel Miguel`
@@ -360,7 +360,7 @@ En definitiva, esta práctica me permitió comprender cómo la digitalización d
 
 #### 🔍 Caso de Prueba #4
 * **ID:** `TC-PIM-004`
-* **Título:** Validación de campos obligatorios vacíos al agregar empleado
+* **Título:** Validar de campos obligatorios vacíos al agregar empleado
 * **Módulo:** PIM
 * **Precondición:** Sesión activa con rol de Administrador; ubicarse en la vista "Add Employee".
 * **Datos de prueba:** Borrar o dejar en blanco el campo "First Name".
@@ -377,7 +377,7 @@ En definitiva, esta práctica me permitió comprender cómo la digitalización d
 
 #### 🔍 Caso de Prueba #5
 * **ID:** `TC-LEAVE-005`
-* **Título:** Validación de regla de negocio por saldo insuficiente al asignar licencia
+* **Título:** Validar de regla de negocio por saldo insuficiente al asignar licencia
 * **Módulo:** Leave
 * **Precondición:** Sesión activa con rol de Administrador. El empleado seleccionado no debe tener días acumulados disponibles.
 * **Datos de prueba:** * Empleado: `Peter Mac Anderson`
@@ -431,7 +431,7 @@ En definitiva, esta práctica me permitió comprender cómo la digitalización d
 
 #### 🔍 Caso de Prueba #8
 * **ID:** `TC-ADM-008`
-* **Título:** Eliminación masiva de registros en la tabla
+* **Título:** Eliminar masiva de registros en la tabla
 * **Módulo:** Admin
 * **Precondición:** Deben existir al menos dos o más registros creados en el listado de nacionalidades.
 * **Datos de prueba:** Selección múltiple de casillas de verificación (Checkboxes).
@@ -450,7 +450,7 @@ En definitiva, esta práctica me permitió comprender cómo la digitalización d
 
 #### 🔍 Caso de Prueba #9
 * **ID:** `TC-TIME-009`
-* **Título:** Visualización y consulta exitosa de registros de asistencia
+* **Título:** Visualizar y consulta exitosa de registros de asistencia
 * **Módulo:** Time
 * **Precondición:** El empleado consultado debe encontrarse en estado activo dentro del sistema con marcaciones previas.
 * **Datos de prueba:** * Employee Name: `Peter Mac Anderson`
@@ -467,7 +467,7 @@ En definitiva, esta práctica me permitió comprender cómo la digitalización d
 
 #### 🔍 Caso de Prueba #10
 * **ID:** `TC-TIME-010`
-* **Título:** Validación del sistema cuando no existen registros para una fecha específica
+* **Título:** Validar del sistema cuando no existen registros para una fecha específica
 * **Módulo:** Time
 * **Precondición:** Escoger un día sin actividad laboral o una fecha en el futuro.
 * **Datos de prueba:** * Employee Name: `Peter Mac Anderson`
@@ -507,7 +507,7 @@ En definitiva, esta práctica me permitió comprender cómo la digitalización d
 
 #### 🔍 Caso de Prueba #12
 * **ID:** `TC-PERF-012`
-* **Título:** Validación de búsqueda con filtros que no coinciden (Sin resultados)
+* **Título:** Validar búsqueda con filtros que no coinciden (Sin resultados)
 * **Módulo:** Performance
 * **Precondición:** Ingresar variables cruzadas de empleados sin procesos evaluativos asignados.
 * **Datos de prueba:** * Employee Name: `Angel`
@@ -527,7 +527,7 @@ En definitiva, esta práctica me permitió comprender cómo la digitalización d
 
 #### 🔍 Caso de Prueba #13
 * **ID:** `TC-DASH-013`
-* **Título:** Verificación de carga e interactividad de widgets en el panel principal
+* **Título:** Verificar de carga e interactividad de widgets en el panel principal
 * **Módulo:** Dashboard
 * **Precondición:** El usuario se encuentra debidamente autenticado con un rol activo del sistema.
 * **Datos de prueba:** N/A (Inspección Visual de la interfaz de usuario)
@@ -550,7 +550,7 @@ En definitiva, esta práctica me permitió comprender cómo la digitalización d
 
 #### 🔍 Caso de Prueba #14
 * **ID:** `TC-CLAIM-014`
-* **Título:** Creación y asignación exitosa de un evento de reclamo
+* **Título:** Crear y asignae exitosa de un evento de reclamo
 * **Módulo:** Claim
 * **Precondición:** El usuario que ejecuta posee privilegios de Admin o Claim Manager.
 * **Datos de prueba:** * Employee Name: `Alice Duval`
@@ -570,7 +570,7 @@ En definitiva, esta práctica me permitió comprender cómo la digitalización d
 
 #### 🔍 Caso de Prueba #15
 * **ID:** `TC-CLAIM-015`
-* **Título:** Validación de campos requeridos obligatorios al asignar un reclamo
+* **Título:** Validar de campos requeridos obligatorios al asignar un reclamo
 * **Módulo:** Claim
 * **Precondición:** Acceder a la sección "Assign Claim" y omitir la entrada de datos.
 * **Datos de prueba:** Formulario vacío.
