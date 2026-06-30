@@ -126,7 +126,7 @@ Estado: PASS(APROBAR)
 ---
 
 ## US-02: Gestión de Ventas (Retail/Pos)
-## Caso de Prueba: US-01 - Búsqueda y Selecionar de Productos
+## Caso de Prueba: US-01 - Búsqueda y Selecionar un Productos
 ### ID: TC-04 
 Titulo: Búsqueda por nombre y selecionar manual de productos en el POS(Punto de Venta)
 
@@ -181,7 +181,7 @@ Resultado actual: EXITOSO. El sistema despliega las opciones de pago. Se validó
 
 ---
 
-## Caso de Prueba: US-02 - Selecionar de Métodos de Pago
+## Caso de Prueba: US-02 - Selecionar Métodos de Pago
 ### ID: TC-06
 Titulo: Validar de métodos de pago: Tarjeta
 
@@ -236,7 +236,7 @@ Tipo de Prueba: Funcional / Salida de Datos.
 
 ---
 
-## Caso de Prueba: US-08 - Verificar de Cálculos de ITBIS
+## Caso de Prueba: US-08 - Verificar los Cálculos de ITBIS
 ### ID: TC-08
 Titulo: Validar de cálculo automático de ITBIS (18%)
 
@@ -294,6 +294,8 @@ Tras la exploración detallada de la plataforma *OrangeHRM Demo*, puedo concluir
 Desde mi perspectiva, el módulo de **PIM** resultó ser el más interesante y relevante, ya que funciona como la columna vertebral de todo el sistema. Al centralizar la información maestra de cada colaborador, garantiza que procesos como la gestión de permisos en el módulo de *Leave* o el seguimiento de vacantes en *Recruitment* operen de manera precisa y organizada.
 
 En definitiva, esta práctica me permitió comprender cómo la digitalización de los procesos de Recursos Humanos no solo ahorra tiempo mediante funciones como el *Quick Launch*, sino que también aporta transparencia y eficiencia a la administración de una empresa moderna.
+
+
 ---
 
 # Práctica 2: Diseño de Casos de Prueba - OrangeHRM
